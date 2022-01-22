@@ -1,0 +1,32 @@
+{
+    "manifest_version":2,
+    "name":"test_trade_api",
+    "version":"0.0.1",
+    "browser_action":{
+        "default_title": "fetched data",
+        "default_popup": "popup.html"
+    },
+    "browser_specific_settings": {
+        "gecko": {
+          "update_url":"https://ghjbku.github.io/updates.json"
+        }
+    },
+    "background": {
+        "scripts": ["background.js"],
+        "persistent": true
+    },
+    "host_permissions": [
+        "<all_urls>"
+      ],
+    "permissions": [
+        "tabs",
+        "<all_urls>"
+      ],
+    "content_scripts":[
+        {
+        "matches":["<all_urls>"],
+        "js":["api_test.js"]
+        }
+    ] ,
+    "content_security_policy": "script-src 'self' https://fonts.googleapis.com/css 'unsafe-eval'; object-src 'self'"
+}

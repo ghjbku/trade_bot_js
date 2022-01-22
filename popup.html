@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script  type="module" src="background.js"></script>
+</head>
+<body>
+    <style>
+        html{
+            min-width: 300px;
+        }
+        #api_response
+         {
+            display: block;
+            /*position: fixed;  Stay in place */
+            z-index: 1; /* Sit on top */
+            padding-top: 20px; /* Location of the box */
+            left: 0;
+            top: 0;
+            width: 100%; /* Full width */
+            height: 100%; /* Full height */
+            overflow: auto; /* Enable scroll if needed */
+            background-color: rgb(0,0,0); /* Fallback color */
+            background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+            font-size: large;
+         }</style>
+        <button type="button" id="start_button">start bot!</button>
+        <input id="api_key" value="write your apikey here"></input>
+    <p id="api_response">this is where the data shall appear!</p>
+
+</body>
+</html>
