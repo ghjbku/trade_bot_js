@@ -8,4 +8,4 @@ apikey can be requested from here for free:https://rapidapi.com/alphavantage/api
 ![image](https://user-images.githubusercontent.com/22707282/150638547-7bf7e11d-a5f9-49e0-a1c4-572d6d8a2ae7.png)
 
 
-## the extension will remember the apikey until browser data is purged
+## the extension will remember the apikey until browser data is purged,as it uses localstorage
